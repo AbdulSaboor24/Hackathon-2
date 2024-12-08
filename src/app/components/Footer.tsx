@@ -26,7 +26,7 @@ const Footer = () => {
               SHOP.CO
             </div>
             <p className="text-[#666] text-sm mb-6 max-w-[280px]">
-              We have clothes that suits your style and which you're proud to wear. From women to men.
+              We have clothes that suits your style and which you&apos;re proud to wear. From women to men.
             </p>
             <div className="flex gap-4 md:gap-6">
               {/* Facebook */}
@@ -142,4 +142,4 @@ const Footer = () => {
   );
 };
 
-export default Footer; 
+export default Footer;  
