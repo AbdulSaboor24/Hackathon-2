@@ -3,8 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { SearchIcon, CartIcon, UserIcon, MenuIcon, CloseIcon } from './icons';
+import { BaseProps } from '@/app/types/common';
 
-const Navbar = () => {
+interface NavbarProps extends BaseProps {}
+
+const Navbar: React.FC<NavbarProps> = ({ className }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isShopDropdownOpen, setIsShopDropdownOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');

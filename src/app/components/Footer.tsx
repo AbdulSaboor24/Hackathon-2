@@ -1,8 +1,11 @@
 'use client'
 
 import Image from 'next/image';
+import { BaseProps } from '@/app/types/common';
 
-const Footer = () => {
+interface FooterProps extends BaseProps {}
+
+const Footer: React.FC<FooterProps> = ({ className }) => {
   const companyLinks = ['About', 'Features', 'Works', 'Career'];
   const helpLinks = ['Customer Support', 'Delivery Details', 'Terms & Conditions', 'Privacy Policy'];
   const faqLinks = ['Account', 'Manage Deliveries', 'Orders', 'Payments'];

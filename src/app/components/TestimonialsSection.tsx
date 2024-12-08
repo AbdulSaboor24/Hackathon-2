@@ -1,8 +1,11 @@
 'use client'
 
 import { useState } from 'react';
+import { BaseProps } from '@/app/types/common';
 
-const TestimonialsSection = () => {
+interface TestimonialsSectionProps extends BaseProps {}
+
+const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({ className }) => {
   const testimonials = [
     {
       id: 1,

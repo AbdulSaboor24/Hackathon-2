@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { BaseProps } from '@/app/types/common';
 
-const TopSelling = () => {
+interface TopSellingProps extends BaseProps {}
+
+const TopSelling: React.FC<TopSellingProps> = ({ className }) => {
   const products = [
     {
       id: 1,

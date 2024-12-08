@@ -2,8 +2,11 @@
 
 import { useState } from 'react';
 import { CloseIcon } from './icons';
+import { BaseProps } from '@/app/types/common';
 
-const Header = () => {
+interface HeaderProps extends BaseProps {}
+
+const Header: React.FC<HeaderProps> = ({ className }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   if (!isVisible) return null;

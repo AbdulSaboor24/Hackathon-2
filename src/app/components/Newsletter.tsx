@@ -2,8 +2,11 @@
 
 import { useState } from 'react';
 import { MailIcon } from './icons';
+import { BaseProps } from '@/app/types/common';
 
-const Newsletter = () => {
+interface NewsletterProps extends BaseProps {}
+
+const Newsletter: React.FC<NewsletterProps> = ({ className }) => {
   const [email, setEmail] = useState('');
 
   return (

@@ -1,6 +1,9 @@
 import Image from 'next/image';
+import { BaseProps } from '@/app/types/common';
 
-export default function BrandsBanner() {
+interface BrandsBannerProps extends BaseProps {}
+
+const BrandsBanner: React.FC<BrandsBannerProps> = ({ className }) => {
   const brands = [
     {
       name: 'Versace',
@@ -53,4 +56,6 @@ export default function BrandsBanner() {
       </div>
     </div>
   );
-}
+};
+
+export default BrandsBanner;

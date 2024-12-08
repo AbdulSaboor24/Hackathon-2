@@ -1,8 +1,11 @@
 'use client'
 
 import Image from 'next/image';
+import { BaseProps } from '@/app/types/common';
 
-const Hero = () => {
+interface HeroProps extends BaseProps {}
+
+const Hero: React.FC<HeroProps> = ({ className }) => {
   const stats = [
     { number: '200+', label: 'International Brands' },
     { number: '2,000+', label: 'High-Quality Products' },
